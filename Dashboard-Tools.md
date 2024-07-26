@@ -45,17 +45,17 @@
 
 ## 1. styled from @emotion/styled
 
-  - 定义单独的syuled组件，存放样式
+  - 定义单独的styled组件，存放样式
 ``` jsx
 import { Box } from "@mui/material";
-  import styled from "@emotion/styled";
+import styled from "@emotion/styled";
 
-  const FlexBetween = styled(Box)({
-      display:"flex",
-      justifyContent:"space-between",
-      alignItems:"center"
-  })
-  export default FlexBetween;
+const FlexBetween = styled(Box)({
+    display:"flex",
+    justifyContent:"space-between",
+    alignItems:"center"
+})
+export default FlexBetween;
 ```
   - 在要用的地方将其作为一个组件引入
       `import FlexBetween from '../../components/FlexBetween';`
